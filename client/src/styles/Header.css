@@ -1,0 +1,27 @@
+.header {
+  background-color: var(--dark-bg);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.name-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.location-contact {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.professional-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}

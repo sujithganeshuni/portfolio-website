@@ -1,0 +1,116 @@
+/* Base Styles */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --light-bg: #f9f9f9;
+  --dark-bg: #2c3e50;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--dark-bg);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.name-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.location-contact {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.professional-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* Stats Section */
+.stats-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.stat-card {
+  background-color: var(--light-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.skill-badge {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.powered-by {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .name-title {
+    font-size: 2rem;
+  }
+  
+  .professional-title {
+    font-size: 1.2rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
